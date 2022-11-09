@@ -247,3 +247,10 @@ const Collection = () => {
 }
 
 export default Collection
+
+export const getStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+};

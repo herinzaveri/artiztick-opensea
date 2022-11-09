@@ -111,3 +111,10 @@ const Nft = () => {
 }
 
 export default Nft
+
+export const getStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+};
